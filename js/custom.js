@@ -1,4 +1,5 @@
-super.init();: super.appView.getSettings().setMediaPlaybackRequiresUserGesture(false);
+super.init();
+super.appView.getSettings().setMediaPlaybackRequiresUserGesture(false);
 playColorSound();
 function $(anID){
 	return document.querySelector(anID);
