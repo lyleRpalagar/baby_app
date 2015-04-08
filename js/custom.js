@@ -1,6 +1,3 @@
-super.init();
-super.appView.getSettings().setMediaPlaybackRequiresUserGesture(false);
-playColorSound();
 function $(anID){
 	return document.querySelector(anID);
 }
@@ -69,6 +66,7 @@ function roundCount(x){
 }
 
 function score(x){
+	playColorSound();
 	var colorSound = $('#sound').src.split('/');
 	var sound = colorSound[8];
     var o = true;
