@@ -71,7 +71,7 @@ function score(x){
 	var sound = colorSound[8];
     var o = true;
     console.log(x);
-    x.stopPropagation();
+    //x.stopPropagation();
     var selected = x.innerHTML.toLowerCase() +'.mp3';
 if(selected != sound ){
 	o = false;
