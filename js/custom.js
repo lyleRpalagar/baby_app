@@ -41,6 +41,7 @@ function playColorSound(){
 	    $('#sound').src = 'https://ssl.gstatic.com/dictionary/static/sounds/de/0/'+colorName[i]+'.mp3';
 		  $('#sound').play();
 		}
+		WebView.getSettings().setMediaPlaybackRequiresUserGesture(false)
 }
 
 // this function puts the rounds in a local storage once the round
