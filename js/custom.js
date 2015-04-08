@@ -13,7 +13,7 @@ function changePositionOrder(){
 
     }
    console.log('current order : ' + randomize);
-   	playColorSound();
+   playColorSound();
 }
 // grabs the array being pass
 function shuffle(array){
