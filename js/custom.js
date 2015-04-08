@@ -34,7 +34,12 @@ function shuffle(array){
 	  // you would call this function then pass the array like shuffle(['1','2','3']);
 }
 //testing 
-function playColorSound(){
+function playColorSound(start){
+	if(start){
+	    $('#sound').src = 'blue.mp3';
+        $('#sound').play();
+        $('#start').style.marginLeft = "400%";
+	}
 	var colorName = shuffle(['blue','red','yellow','green','orange']);
 	for(var i = 0; i < 5; i++){
 	    $('#sound').src = 'https://ssl.gstatic.com/dictionary/static/sounds/de/0/'+colorName[i]+'.mp3';
