@@ -18,16 +18,35 @@
 </head>
 
 <body id="body">	
+	<div id ="nav">
+		<div class="logoName">
+			<h1>Baby App <br/><span class="round"></span></h1>
+	    </div>
+	</div> <!-- #nav -->
 	 <div id="container">
-	 	<audio controls id="alert">
-	 		<source src="notification.mp3" type="audio/mpeg"/>
-	 	</audio>
-      
-       <p>Testing </p>
-	  
+	   <div class="box" id="spot0" ontouchstart="score(this)">Blue</div>
+	   <div class="box" id="spot1" ontouchstart="score(this)">Red</div>
+	   <div class="box" id="spot2" ontouchstart="score(this)">Yellow</div> 
+	   <div class="box" id="spot3" ontouchstart="score(this)">Green</div> 
+	   <div class="box" id="spot4" ontouchstart="score(this)">Orange</div>    	  
      </div>     
       <!-- #container -->
- 
+  <div id="scoreBox"><h2 id="alert"></h2></div>
+
+
+
+
+  <!-- hidden audio --> 
+  <audio controls id="sound">
+	  <source src="blue.mp3" type="audio/ogg">
+  </audio>
+  <audio controls id="score">
+      <source src="http://www.orangefreesounds.com/wp-content/uploads/2014/10/Correct-answer.mp3?_=1" type="audio/ogg">
+  </audio>
+  <!-- /hidden audio --> 
+
+
+
 	 	<!-- Javascript -->
 	 	<script type="text/javascript" src="js/custom.js"></script>
 	 </div>
