@@ -66,7 +66,6 @@ function roundCount(x){
 }
 
 function score(x){
-	playColorSound();
 	var colorSound = $('#sound').src.split('/');
 	var sound = colorSound[8];
     var o = true;
