@@ -70,6 +70,8 @@ function score(x){
 	var colorSound = $('#sound').src.split('/');
 	var sound = colorSound[8];
     var o = true;
+    console.log(x);
+    x.stopPropagation();
     var selected = x.innerHTML.toLowerCase() +'.mp3';
 if(selected != sound ){
 	o = false;
@@ -91,7 +93,7 @@ if(o == true){
 		$('#scoreBox').style.opacity = '1';
 		$('#scoreBox').style.backgroundColor = "#8DC63F";
 		$('#scoreBox').className= "animate";
-		$('#score').src="http://www.orangefreesounds.com/wp-content/uploads/2014/10/Correct-answer.mp3?_=1";
+		$('#score').src="correct.mp3";
 		$('#score').play();
 		$('#alert').innerHTML = "CORRECT";
 
@@ -110,7 +112,7 @@ if(o == true){
 		// wrong
 		$('#scoreBox').style.opacity = '1';
 	    $('#scoreBox').style.backgroundColor = "#FF0000";
-	    $('#score').src="http://www.orangefreesounds.com/wp-content/uploads/2014/08/Wrong-answer-sound-effect.mp3?_=1";
+	    $('#score').src="wrong.mp3";
 	    $('#score').play();
 		$('#scoreBox').className= "animate";
 		$('#alert').innerHTML = "TRY AGAIN";
