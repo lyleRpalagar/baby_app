@@ -94,7 +94,7 @@ if (typeof localStorage.wrong == 'undefined') {
 	}   
 if(o == true){
 		// correct
-		$('#scoreBox').style.opacity = '1';
+		$('#scoreBox').style.top = '0';
 		$('#scoreBox').style.backgroundColor = "#8DC63F";
 		$('#scoreBox').className= "animate";
 		$('#score').src="correct.mp3";
@@ -104,7 +104,7 @@ if(o == true){
 		setTimeout(function(){
 	            $('#scoreBox').classList.remove('animate');
 	            $('#scoreBox').style.backgroundColor = "#f5f5f5";
-	            $('#scoreBox').style.opacity = '0';
+	            $('#scoreBox').style.top = '-200px';
 	                correct++;
                     localStorage.correct = correct;
 	            changePositionOrder();
@@ -114,7 +114,7 @@ if(o == true){
      }
     else{
 		// wrong
-		$('#scoreBox').style.opacity = '1';
+		$('#scoreBox').style.top = '0';
 	    $('#scoreBox').style.backgroundColor = "#FF0000";
 	    $('#score').src="wrong.mp3";
 	    $('#score').play();
@@ -122,7 +122,7 @@ if(o == true){
 		$('#alert').innerHTML = "TRY AGAIN";
 
 		setTimeout(function(){
-			$('#scoreBox').style.opacity = '0';
+			$('#scoreBox').style.top = '-200px';
 	        $('#scoreBox').classList.remove('animate');
 
 	        $('#scoreBox').style.backgroundColor = "#f5f5f5";
